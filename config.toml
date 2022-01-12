@@ -1,0 +1,42 @@
+baseURL = "https://totsugekitai.net/"
+languageCode = "ja-jp"
+title = "totsugekitai.net"
+theme = "etch"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[markup]
+defaultMarkdownHandler = "blackfriday"
+[markup.blackFriday]
+hrefTargetBlank = true
+
+[params]
+copyright = "Copyright © 2022 HIROSE Tomoyuki"
+dark = "on"
+highlight = true
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "posts"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "575"
+name = "575"
+title = "575"
+url = "/575"
+weight = 15
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about"
+weight = 20
+
+[permalinks]
+posts = "/:title/"
