@@ -1,4 +1,4 @@
-baseURL = "https://totsugekitai.net/"
+baseURL = "https://totsugekitai.github.io/totsugekitai.net/"
 languageCode = "ja-jp"
 title = "totsugekitai.net"
 theme = "etch"

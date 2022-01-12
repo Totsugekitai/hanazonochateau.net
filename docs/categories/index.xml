@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on totsugekitai.net</title>
-    <link>https://totsugekitai.net/categories/</link>
+    <link>https://totsugekitai.github.io/totsugekitai.net/categories/</link>
     <description>Recent content in Categories on totsugekitai.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     
-	<atom:link href="https://totsugekitai.net/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://totsugekitai.github.io/totsugekitai.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>20220112</title>
-      <link>https://totsugekitai.net/20220112/</link>
+      <link>https://totsugekitai.github.io/totsugekitai.net/20220112/</link>
       <pubDate>Wed, 12 Jan 2022 18:26:45 +0900</pubDate>
       
-      <guid>https://totsugekitai.net/20220112/</guid>
+      <guid>https://totsugekitai.github.io/totsugekitai.net/20220112/</guid>
       <description>&lt;p&gt;今日は気分が悪いです。&lt;/p&gt;
 </description>
     </item>
