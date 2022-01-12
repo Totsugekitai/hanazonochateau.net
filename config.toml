@@ -5,6 +5,7 @@ theme = "etch"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+publishDir = "docs"
 
 [markup]
 defaultMarkdownHandler = "blackfriday"
