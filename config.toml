@@ -41,5 +41,12 @@ title = "about"
 url = "/about"
 weight = 20
 
+[[menu.main]]
+identifier = "comments"
+name = "comments"
+title = "comments"
+url = "/comments"
+weight = 25
+
 [permalinks]
 posts = "/:title/"
