@@ -30,5 +30,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          external_repository: Totsugekitai/totsugekitai.github.io
+          publish_dir: ./public
           cname: hanazonochateau.net
