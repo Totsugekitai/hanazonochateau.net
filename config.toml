@@ -18,6 +18,7 @@ copyright = "Copyright © 2022 HIROSE Tomoyuki"
 dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Z3mAWsYhRrw98aDp8"
+topHitokoto = "毎日眠いです。"
 
 [menu]
 [[menu.main]]
