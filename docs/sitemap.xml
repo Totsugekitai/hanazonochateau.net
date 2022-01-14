@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://totsugekitai.net/20220114/</loc>
+    <lastmod>2022-01-14T12:34:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://totsugekitai.net/posts/</loc>
+    <lastmod>2022-01-14T12:34:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://totsugekitai.net/</loc>
+    <lastmod>2022-01-14T12:34:59+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://totsugekitai.net/20220113/</loc>
     <lastmod>2022-01-13T18:37:01+09:00</lastmod>
   </url>
@@ -13,17 +28,7 @@
   </url>
   
   <url>
-    <loc>https://totsugekitai.net/posts/</loc>
-    <lastmod>2022-01-13T18:37:01+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://totsugekitai.net/tags/</loc>
-    <lastmod>2022-01-13T18:37:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://totsugekitai.net/</loc>
     <lastmod>2022-01-13T18:37:01+09:00</lastmod>
   </url>
   
