@@ -3,4 +3,4 @@
 - ssg: hugo
 - theme: etch
 - domain: google domains
-- commentform: google forms
+- comment form: google forms
