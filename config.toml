@@ -1,6 +1,6 @@
 baseURL = "https://totsugekitai.net/"
 languageCode = "ja-jp"
-title = "totsugekitai.net"
+title = "花園シャトー107号室"
 theme = "etch"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
