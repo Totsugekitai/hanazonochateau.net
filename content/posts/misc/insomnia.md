@@ -3,7 +3,7 @@ title: "不眠"
 slug: insomnia
 date: 2022-01-16T06:04:21+09:00
 tags: [ "misc" ]
-draft: true
+draft: false
 ---
 
 ここ一週間くらい、不眠が続いています。
