@@ -18,7 +18,8 @@ copyright = "Copyright © 2022 HIROSE Tomoyuki"
 dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
-topHitokoto = "毎日眠いです。"
+description = "毎日眠いです。"
+hitokoto = "寒いと布団が気持ちいい"
 images = ["site_ogp.png"]
 
 [menu]
