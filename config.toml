@@ -51,3 +51,6 @@ weight = 25
 
 [permalinks]
 posts = "/posts/:year/:month/:day/:slug/"
+575 = "/575"
+about = "/about"
+comments = "/comments"
