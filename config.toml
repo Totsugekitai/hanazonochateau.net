@@ -25,7 +25,7 @@ topHitokoto = "毎日眠いです。"
 identifier = "posts"
 name = "posts"
 title = "posts"
-url = "/"
+url = "/posts"
 weight = 10
 
 [[menu.main]]
@@ -50,4 +50,4 @@ url = "/comments"
 weight = 25
 
 [permalinks]
-posts = "/:title/"
+posts = "/posts/:year/:month/:day/:slug/"
