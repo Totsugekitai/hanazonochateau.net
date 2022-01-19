@@ -1,9 +1,9 @@
 ---
-title: "Depression"
+title: "抑鬱気分"
 slug: depression
 date: 2022-01-19T08:58:17+09:00
 tags: [ "misc" ]
-draft: true
+draft: false
 ---
 
 気分が落ち込んでどうしようもないので、とにかく文章にして吐き出さなければと一心不乱にキーボードを叩いている。
