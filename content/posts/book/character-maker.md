@@ -1,5 +1,5 @@
 ---
-title: "キャラクターメーカー メモ"
+title: "キャラクターメーカー"
 slug: character-maker
 date: 2022-01-20T11:44:41+09:00
 tags: [ "book" ]
