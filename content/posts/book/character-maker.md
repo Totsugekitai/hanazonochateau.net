@@ -3,7 +3,7 @@ title: "キャラクターメーカー メモ"
 slug: character-maker
 date: 2022-01-20T11:44:41+09:00
 tags: [ "book" ]
-draft: true
+draft: false
 ---
 
 *この文章は、『キャラクターメーカー 6つの理論とワークショップで学ぶ「つくり方」』の読書メモです。*
