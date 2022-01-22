@@ -3,7 +3,7 @@ title: "キャベツのスープ"
 slug: cabbage-soup
 date: 2022-01-23T06:27:33+09:00
 tags: [ "poem" ]
-draft: true
+draft: false
 ---
 
 きょうは少し早起きで
