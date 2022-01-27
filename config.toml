@@ -7,6 +7,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 publishDir = "docs"
 canonifyurls = true
+enableRobotsTXT = true
 
 [markup]
 defaultMarkdownHandler = "blackfriday"
