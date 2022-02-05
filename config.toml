@@ -15,7 +15,7 @@ defaultMarkdownHandler = "blackfriday"
 hrefTargetBlank = true
 
 [params]
-copyright = "Copyright © 2022 HIROSE Tomoyuki"
+copyright = "Copyright © 2022 Totsugekitai"
 dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
