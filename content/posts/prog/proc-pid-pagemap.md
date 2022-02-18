@@ -3,7 +3,7 @@ title: "/proc/$pid/pagemapを読みたいときにハマったポイント"
 slug: proc-pid-pagemap
 date: 2022-02-18T22:28:36+09:00
 tags: [ "prog" ]
-draft: true
+draft: false
 ---
 
 linuxでは `/proc/$pid/pagemap` でプロセスの仮想メモリ領域がどのように物理メモリにマップされているかを調べることができます。
