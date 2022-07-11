@@ -20,7 +20,8 @@ dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
 description = "毎日眠いです。"
-hitokoto = "寒いと布団が気持ちいい"
+#hitokoto = "寒いと布団が気持ちいい"
+hitokoto = "冷房つけてベッドダイブ"
 images = ["site_ogp.png"]
 
 [menu]
