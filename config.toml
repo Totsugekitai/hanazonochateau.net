@@ -10,9 +10,7 @@ canonifyurls = true
 enableRobotsTXT = true
 
 [markup]
-defaultMarkdownHandler = "blackfriday"
-[markup.blackFriday]
-hrefTargetBlank = true
+defaultMarkdownHandler = "goldmark"
 
 [params]
 copyright = "Copyright © 2022 Totsugekitai"
@@ -20,8 +18,9 @@ dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
 description = "毎日眠いです。"
-#hitokoto = "寒いと布団が気持ちいい"
-hitokoto = "冷房つけてベッドダイブ"
+hitokoto = "春眠暁どころか真昼間を覚えず"
+# hitokoto = "寒いと布団が気持ちいい"
+# hitokoto = "冷房つけてベッドダイブ"
 images = ["site_ogp.png"]
 
 [menu]
