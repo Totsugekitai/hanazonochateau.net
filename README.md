@@ -2,6 +2,5 @@
 
 - ssg: hugo
 - theme: etch
-- domain: google domains
+- domain: cloudflare
 - comment form: google forms
-- to: [totsugekitai.github.io](https://github.com/Totsugekitai/totsugekitai.github.io)

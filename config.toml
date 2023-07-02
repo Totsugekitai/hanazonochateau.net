@@ -5,7 +5,7 @@ theme = "etch"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-publishDir = "docs"
+publishDir = "public"
 canonifyurls = true
 enableRobotsTXT = true
 
