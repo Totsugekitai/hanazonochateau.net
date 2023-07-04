@@ -18,9 +18,10 @@ dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
 description = "毎日眠いです。"
-hitokoto = "春眠暁どころか真昼間を覚えず"
+# hitokoto = "春眠暁どころか真昼間を覚えず"
 # hitokoto = "寒いと布団が気持ちいい"
 # hitokoto = "冷房つけてベッドダイブ"
+hitokoto = "夏風邪は咳が長引きます"
 images = ["site_ogp.png"]
 
 [menu]
@@ -51,6 +52,13 @@ name = "comments"
 title = "comments"
 url = "/comments"
 weight = 25
+
+[[menu.main]]
+identifier = "rss"
+name = "rss"
+title = "rss"
+url = "/index.xml"
+weight = 30
 
 [permalinks]
 posts = "/posts/:year/:month/:day/:slug"
