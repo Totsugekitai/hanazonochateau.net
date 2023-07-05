@@ -8,4 +8,5 @@ draft: false
 | handle name | Totsugekitai                                        |
 | GitHub      | [Totsugekitai](https://github.com/Totsugekitai)     |
 | Twitter     | [@totsugeki_tai](https://twitter.com/totsugeki_tai) |
+| Pasokey     | [@totsugekitai](https://pasokey.net/@totsugekitai)  |
 | SoundCloud  | [Totsugekitai](https://soundcloud.com/totsugekitai) |
