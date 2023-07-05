@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gitpython = "*"
+dataclasses-json = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
+python_full_version = "3.7.13"
+
+[scripts]
+build = "python3 build.py"
+server = "hugo server --disableFastRender"
+hugo = "hugo"
