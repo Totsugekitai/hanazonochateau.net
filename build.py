@@ -49,6 +49,8 @@ if __name__ == '__main__':
     data = LineInfo.schema().dumps(line_info_list, many=True,
                                    indent=4, ensure_ascii=False)
 
+    print(data)
+
     with open('data/blame_575.json', 'w') as f:
         f.write(data)
 
