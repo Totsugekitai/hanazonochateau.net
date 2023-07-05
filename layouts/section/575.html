@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+
+{{ $top_comment := findRE "<p>.*</p>" .Content }}
+<p>{{ index $top_comment 0 | plainify }}</p>
+
+{{ $blame_info_list := .Site.Data.blame_575 }}
+<ul>
+    {{ range $blame_info_list }}
+    {{ $commit_hash := .commit_hash }}
+    <li>
+        {{ .line }} <a href={{ printf "https://github.com/Totsugekitai/hanazonochateau.net/commit/%s" $commit_hash
+            }}><span style="font-size:x-small; color:darkgray;">by {{ .author }} {{ .date }}</span></a>
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}
