@@ -1,4 +1,5 @@
 import re
+import subprocess
 from dataclasses import dataclass
 from dataclasses_json import dataclass_json
 from datetime import datetime
@@ -50,3 +51,5 @@ if __name__ == '__main__':
 
     with open('data/blame_575.json', 'w') as f:
         f.write(data)
+
+    subprocess.check_call("hugo", shell=True)
