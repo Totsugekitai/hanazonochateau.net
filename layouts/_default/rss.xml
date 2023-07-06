@@ -35,15 +35,40 @@
     {{ with .OutputFormats.Get "RSS" }}
       {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end }}
-    {{ range where .Site.Pages "Kind" "page" }}
-      {{ if or (eq .Section "posts") (eq .Section "post") }}
+
+    {{ $pub_items := .Site.Pages }}
+    {{ $pub_items = $pub_items | append .Site.Data.blame_575 }}
+    {{ $sorted_pub_items := slice }}
+    {{ range $pub_items }}
+      {{ if eq (printf "%T" .) "*hugolib.pageState" }} <!-- normal post -->
+        {{ $pub_item := dict "date" .Date "item" . }}
+        {{ $sorted_pub_items = $sorted_pub_items | append $pub_item }}
+      {{ else if eq (printf "%T" .) "map[string]interface {}" }}  <!-- 575 post -->
+        {{ $pub_item := dict "date" (time .date) "item" . }}
+        {{ $sorted_pub_items = $sorted_pub_items | append $pub_item }}
+      {{ end }}
+    {{ end }}
+
+    {{ range sort $sorted_pub_items "date" "desc" }}
+      {{ if eq (printf "%T" .item) "*hugolib.pageState" }}
+        {{ if and (or (eq .item.Section "post") (eq .item.Section "posts")) (eq .item.Page.Kind "page") }}
+          <item>
+            <title>{{ .item.Title }}</title>
+            <link>{{ .item.Permalink }}</link>
+            <pubDate>{{ .item.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+            {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.item}}){{end}}</author>{{end}}
+            <guid>{{ .item.Permalink }}</guid>
+            <description>{{ .item.Content | html }}</description>
+          </item>
+        {{ end }}
+      {{ else if eq (printf "%T" .item) "map[string]interface {}" }}
         <item>
-          <title>{{ .Title }}</title>
-          <link>{{ .Permalink }}</link>
-          <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-          {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-          <guid>{{ .Permalink }}</guid>
-          <description>{{ .Content | html }}</description>
+          <title>575が追加されました</title>
+          <link>https://hanazonochateau.net/575/</link>
+          <pubDate>{{ .date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+          <author>{{ .item.author }}</author>
+          <guid>{{ now.UnixNano }}</guid>
+          <description>{{ (printf "<h2>%v</h2>" .item.line) | html }}</description>
         </item>
       {{ end }}
     {{ end }}
