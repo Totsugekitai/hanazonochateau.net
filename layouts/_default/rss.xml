@@ -67,7 +67,7 @@
           <link>https://hanazonochateau.net/575/</link>
           <pubDate>{{ .date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
           <author>{{ .item.author }}</author>
-          <guid>{{ now.UnixNano }}</guid>
+          <guid>{{ md5 (printf "%v%v%v%v" .item.line .item.author .item.date .item.commit_hash) }}</guid>
           <description>{{ (printf "<h2>%v</h2>" .item.line) | html }}</description>
         </item>
       {{ end }}
