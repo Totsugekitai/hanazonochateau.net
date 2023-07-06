@@ -31,7 +31,7 @@ def get_line_info_list(file: str) -> List[LineInfo]:
     for blame_entry in repo.blame_incremental(rev='HEAD', file=file):
         commit = repo.commit(blame_entry.commit)
         author = str(commit.author)
-        date = str(datetime.fromtimestamp(commit.authored_date).date())
+        date = str(commit.authored_datetime.strftime('%Y-%m-%d %H:%M:%S %z'))
         linenos = blame_entry.linenos
 
         for i in linenos:
