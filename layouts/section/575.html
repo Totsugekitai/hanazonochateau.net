@@ -11,7 +11,9 @@
     {{ $commit_hash := .commit_hash }}
     <li>
         {{ .line }} <a href={{ printf "https://github.com/Totsugekitai/hanazonochateau.net/commit/%s" $commit_hash }}>
-            <span style="font-size:x-small; color:darkgray;">by {{ .author }} {{ .date }}</span></a>
+            <span style="font-size:x-small; color:darkgray;">by {{ .author }} {{ dateFormat "2006-01-02" (printf .date |
+                time)
+                }}</span></a>
     </li>
     {{ end }}
 </ul>
