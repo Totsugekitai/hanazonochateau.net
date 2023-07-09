@@ -13,6 +13,4 @@ dataclasses-json = "*"
 python_version = "3.7"
 
 [scripts]
-build = "python3 build.py"
-server = "hugo server --disableFastRender"
-hugo = "hugo"
+build = "python3 build.py && hugo"

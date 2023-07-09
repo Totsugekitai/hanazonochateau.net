@@ -2,20 +2,42 @@
 
 <h2>{{ .Title }}</h2>
 
-{{ $top_comment := findRE "<p>.*</p>" .Content }}
-<p>{{ index $top_comment 0 | plainify }}</p>
+{{ $top_comments := findRE "<p>.*</p>" .Content }}
+{{ range $top_comments }}
+<p>{{ plainify . }}</p>
+{{ end }}
 
 {{ $blame_info_list := .Site.Data.blame_575 }}
 <ul>
-    {{ range $blame_info_list }}
-    {{ $commit_hash := .commit_hash }}
-    <li>
-        {{ .line }} <a href={{ printf "https://github.com/Totsugekitai/hanazonochateau.net/commit/%s" $commit_hash }}>
-            <span style="font-size:x-small; color:darkgray;">by {{ .author }} {{ dateFormat "2006-01-02" (printf .date |
-                time)
-                }}</span></a>
-    </li>
+  {{ range $blame_info_list }}
+  {{ $commit_hash := .commit_hash }}
+  {{ $guid := .guid }}
+  <li id="{{ $guid }}" style="list-style-type: none;">
+    {{ if ne (len .okimochi) 0 }}
+    <details>
+      <summary>
+        <a href="#{{ $guid }}" style="color: inherit; text-decoration: none; cursor: default;">{{ .line }}</a>
+        <a href={{ printf "https://github.com/Totsugekitai/hanazonochateau.net/commit/%s" $commit_hash }}
+          style="font-size: x-small; color: darkgray;">
+          by {{ .author }} {{ dateFormat "2006-01-02" (printf .date | time) }}
+        </a>
+      </summary>
+      <p
+        style="margin: 0px; font-style: italic; font-size: small; padding-top: 5px; padding-bottom: 5px; padding-left: 4em;">
+        {{ .okimochi }}
+      </p>
+    </details>
+    {{ else }}
+    <span style="list-style: none;">
+      <a href="#{{ $guid }}" style="color: inherit; text-decoration: none; cursor: default;">{{ .line }}</a>
+      <a href={{ printf "https://github.com/Totsugekitai/hanazonochateau.net/commit/%s" $commit_hash }}
+        style="font-size: x-small; color: darkgray;">
+        by {{ .author }} {{ dateFormat "2006-01-02" (printf .date | time) }}
+      </a>
+    </span>
     {{ end }}
+  </li>
+  {{ end }}
 </ul>
 
 {{ end }}
