@@ -73,3 +73,4 @@ draft: false
 - 無害だね 欲望のない おじさんは
 - ローギアで 見下ろす夜景 筑波山
 - 食べ残し 鍋にぶちこみ 煮ればヨシ
+- Strict-Transport-Security
