@@ -74,3 +74,4 @@ draft: false
 - ローギアで 見下ろす夜景 筑波山
 - 食べ残し 鍋にぶちこみ 煮ればヨシ
 - Strict-Transport-Security
+- ラーメンと 餃子合わせて 800円
