@@ -75,3 +75,4 @@ draft: false
 - 食べ残し 鍋にぶちこみ 煮ればヨシ
 - Strict-Transport-Security
 - ラーメンと 餃子合わせて 800円
+- 北陸の 美味しい蟹は ズワイガニ
