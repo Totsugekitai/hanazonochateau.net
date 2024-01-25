@@ -36,3 +36,11 @@ add 575
 
 内部的には `git blame` してauthor情報やら日時やらを取ってきて、ビルド時に埋め込んでいます。
 詳細は `build.py` を見よ。
+
+## ビルド
+
+```sh
+$ pipenv install
+$ pipenv shell
+$ python3 build.py
+```
