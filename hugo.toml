@@ -21,7 +21,8 @@ description = "毎日眠いです。"
 # hitokoto = "春眠暁どころか真昼間を覚えず"
 # hitokoto = "寒いと布団が気持ちいい"
 # hitokoto = "冷房つけてベッドダイブ"
-hitokoto = "夏風邪は咳が長引きます"
+# hitokoto = "夏風邪は咳が長引きます"
+hitokoto = "実は生牡蠣より蒸し牡蠣が好きです"
 images = ["site_ogp.png"]
 
 [menu]
