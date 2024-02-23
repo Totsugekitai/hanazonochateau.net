@@ -11,11 +11,6 @@ python = "^3.7"
 GitPython = "^3.1.42"
 dataclasses-json = "^0.6.4"
 
-
-[tool.poetry.group.dev.dependencies]
-gitpython = "^3.1.42"
-dataclasses-json = "^0.6.4"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
