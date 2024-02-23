@@ -18,11 +18,11 @@
     "default": {
         "dataclasses-json": {
             "hashes": [
-                "sha256:35cb40aae824736fdf959801356641836365219cfe14caeb115c39136f775d2a",
-                "sha256:4aeb343357997396f6bca1acae64e486c3a723d8f5c76301888abeccf0c45176"
+                "sha256:73696ebf24936560cca79a2430cbc4f3dd23ac7bf46ed17f38e5e5e7657a6377",
+                "sha256:f90578b8a3177f7552f4e1a6e535e84293cd5da421fcce0642d49c0d7bdf8df2"
             ],
             "index": "pypi",
-            "version": "==0.6.3"
+            "version": "==0.6.4"
         },
         "gitdb": {
             "hashes": [
@@ -34,11 +34,11 @@
         },
         "gitpython": {
             "hashes": [
-                "sha256:c36b6634d069b3f719610175020a9aed919421c87552185b085e04fbbdb10b7c",
-                "sha256:ed66e624884f76df22c8e16066d567aaa5a37d5b5fa19db2c6df6f7156db9048"
+                "sha256:1bf9cd7c9e7255f77778ea54359e54ac22a72a5b51288c457c881057b7bb9ecd",
+                "sha256:2d99869e0fef71a73cbd242528105af1d6c1b108c60dfabd994bf292f76c3ceb"
             ],
             "index": "pypi",
-            "version": "==3.1.41"
+            "version": "==3.1.42"
         },
         "marshmallow": {
             "hashes": [
