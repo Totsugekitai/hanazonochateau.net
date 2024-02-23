@@ -40,7 +40,6 @@ add 575
 ## ビルド
 
 ```sh
-$ pipenv install
-$ pipenv shell
-$ python3 build.py
+$ poetry install
+$ poetry run python3 build.py
 ```

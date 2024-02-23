@@ -41,7 +41,7 @@ def get_line_info_list(file: str) -> List[LineInfo]:
             okimochi = ''
         else:
             commit_msg_lines = commit_msg_lines[2:]
-            okimochi = '\n'.join(commit_msg_lines)
+            okimochi = '\n'.join(commit_msg_lines).strip()
 
         for i in linenos:
             line = lines_575[i-1].rstrip()
