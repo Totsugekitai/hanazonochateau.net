@@ -48,6 +48,13 @@ url = "/about"
 weight = 20
 
 [[menu.main]]
+identifier = "gallery"
+name = "gallery"
+title = "gallery"
+url = "/gallery"
+weight = 23
+
+[[menu.main]]
 identifier = "comments"
 name = "comments"
 title = "comments"
@@ -65,4 +72,5 @@ weight = 30
 posts = "/posts/:year/:month/:day/:slug"
 575 = "/575"
 about = "/about"
+gallery = "/gallery"
 comments = "/comments"

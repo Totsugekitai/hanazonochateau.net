@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div>
+    {{ range (sort (.Resources.Match "*.jpg") "Name" "desc") }}
+    <img src="{{ .RelPermalink }}" style="max-width: 100%; height: auto; margin: 0;">
+    {{ end }}
+</div>
+
+{{ end }}
