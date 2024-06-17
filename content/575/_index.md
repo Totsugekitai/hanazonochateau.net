@@ -76,3 +76,4 @@ draft: false
 - Strict-Transport-Security
 - ラーメンと 餃子合わせて 800円
 - 北陸の 美味しい蟹は ズワイガニ
+- 割り箸を 電子レンジで 温める
