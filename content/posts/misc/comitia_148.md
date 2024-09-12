@@ -1,10 +1,10 @@
----
-title: "コミティア148に行った"
-slug: comitia_148
-date: 2024-05-26T23:14:49+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2024-05-26T23:14:49+09:00'
+draft = false
+slug = 'comitia_148'
+tags = ['misc']
+title = 'コミティア148に行った'
++++
 
 ## 一週間前
 

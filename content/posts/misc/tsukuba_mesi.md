@@ -1,10 +1,10 @@
----
-title: "つくばメシ堪能日記"
-slug: tsukuba_mesi
-date: 2024-04-21T22:49:41+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2024-04-21T22:49:41+09:00'
+draft = false
+slug = 'tsukuba_mesi'
+tags = ['misc']
+title = 'つくばメシ堪能日記'
++++
 
 金曜日の退勤後、シャワーを浴びてつくばに向かった。
 

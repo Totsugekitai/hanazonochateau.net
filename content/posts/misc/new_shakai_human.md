@@ -1,10 +1,10 @@
----
-title: "春から働きます"
-slug: new_shakai_human
-date: 2022-03-28T06:36:18+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2022-03-28T06:36:18+09:00'
+draft = false
+slug = 'new_shakai_human'
+tags = ['misc']
+title = '春から働きます'
++++
 
 飽きて放置していたので久しぶりの更新になります。
 近況と春からのことについて書きたいと思います。

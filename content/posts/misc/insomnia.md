@@ -1,10 +1,10 @@
----
-title: "不眠"
-slug: insomnia
-date: 2022-01-16T06:04:21+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2022-01-16T06:04:21+09:00'
+draft = false
+slug = 'insomnia'
+tags = ['misc']
+title = '不眠'
++++
 
 ここ一週間くらい、不眠が続いています。
 

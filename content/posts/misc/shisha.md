@@ -1,10 +1,10 @@
----
-title: "シーシャバーに行く"
-slug: shisha
-date: 2024-07-03T22:56:04+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2024-07-03T22:56:04+09:00'
+draft = false
+slug = 'shisha'
+tags = ['misc']
+title = 'シーシャバーに行く'
++++
 
 最近シーシャバーによく行くようになった。
 

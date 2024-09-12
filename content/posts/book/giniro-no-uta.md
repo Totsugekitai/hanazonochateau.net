@@ -1,10 +1,10 @@
----
-title: "ギンイロノウタ"
-slug: giniro-no-uta
-date: 2022-01-22T04:58:04+09:00
-tags: [ "book" ]
-draft: false
----
++++
+date = '2022-01-22T04:58:04+09:00'
+draft = false
+slug = 'giniro-no-uta'
+tags = ['book']
+title = 'ギンイロノウタ'
++++
 
 *この文章は、村田沙耶香『ギンイロノウタ』の感想メモです。*
 

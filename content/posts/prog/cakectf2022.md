@@ -1,10 +1,10 @@
----
-title: "CakeCTF 2022 Writeup"
-slug: cakectf2022
-date: 2022-09-05T08:18:40+09:00
-tags: [ "prog" ]
-draft: false
----
++++
+date = '2022-09-05T08:18:40+09:00'
+draft = false
+slug = 'cakectf2022'
+tags = ['prog']
+title = 'CakeCTF 2022 Writeup'
++++
 
 CakeCTF 2022 に [DCDC](https://dcdcnation.com/) として参加し、 その内の kiwi という問題を解きました。
 楽しかった一方、自分にとっては難しい問題が多く、まだまだ力をつける必要があるなと感じました。

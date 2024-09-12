@@ -1,10 +1,10 @@
----
-title: "/proc/$pid/pagemapを読みたいときにハマったポイント"
-slug: proc-pid-pagemap
-date: 2022-02-18T22:28:36+09:00
-tags: [ "prog" ]
-draft: false
----
++++
+date = '2022-02-18T22:28:36+09:00'
+draft = false
+slug = 'proc-pid-pagemap'
+tags = ['prog']
+title = '/proc/$pid/pagemapを読みたいときにハマったポイント'
++++
 
 linuxでは `/proc/$pid/pagemap` でプロセスの仮想メモリ領域がどのように物理メモリにマップされているかを調べることができます。
 しかし、いくつか注意しないと正確に読めないのでそれについて解説します。

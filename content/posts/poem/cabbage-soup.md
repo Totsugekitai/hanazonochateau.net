@@ -1,10 +1,10 @@
----
-title: "キャベツのスープ"
-slug: cabbage-soup
-date: 2022-01-23T06:27:33+09:00
-tags: [ "poem" ]
-draft: false
----
++++
+date = '2022-01-23T06:27:33+09:00'
+draft = false
+slug = 'cabbage-soup'
+tags = ['poem']
+title = 'キャベツのスープ'
++++
 
 きょうは少し早起きで
 

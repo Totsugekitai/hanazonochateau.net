@@ -1,10 +1,10 @@
----
-title: "書くのが面倒"
-slug: too_lazy_to_write
-date: 2022-01-27T17:04:53+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2022-01-27T17:04:53+09:00'
+draft = false
+slug = 'too_lazy_to_write'
+tags = ['misc']
+title = '書くのが面倒'
++++
 
 文章を書くのが面倒になってきました。
 

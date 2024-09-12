@@ -1,10 +1,10 @@
----
-title: "転職します"
-slug: job-change
-date: 2023-04-02T00:00:00+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2023-04-02T00:00:00+09:00'
+draft = false
+slug = 'job-change'
+tags = ['misc']
+title = '転職します'
++++
 
 タイトル通りです。
 3/31で退職し、4/3から次の職場で働きます。

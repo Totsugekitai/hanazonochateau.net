@@ -1,10 +1,10 @@
----
-title: "車を買いました"
-slug: car
-date: 2022-05-25T00:15:21+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2022-05-25T00:15:21+09:00'
+draft = false
+slug = 'car'
+tags = ['misc']
+title = '車を買いました'
++++
 
 題名の通り、車を買いました。
 中古の日産サニーEXサルーン5MTです。

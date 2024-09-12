@@ -1,10 +1,10 @@
----
-title: "小掃除"
-slug: little-cleaning
-date: 2023-05-11T00:00:59+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2023-05-11T00:00:59+09:00'
+draft = false
+slug = 'little-cleaning'
+tags = ['misc']
+title = '小掃除'
++++
 
 日々の暮らしを行っていると、ふとした瞬間に掃除がしたくなることがある。
 しかし、実際に行動に移すには以下の条件が必要だ。

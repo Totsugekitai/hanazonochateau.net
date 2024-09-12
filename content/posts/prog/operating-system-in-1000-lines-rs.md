@@ -1,10 +1,10 @@
----
-title: "「Writing an OS in 1000 Lines」をRISC-V 64bit向けにRustで書いた"
-slug: operating-system-in-1000-lines-rs
-date: 2023-09-05T19:37:34+09:00
-tags: [ "prog" ]
-draft: false
----
++++
+date = '2023-09-05T19:37:34+09:00'
+draft = false
+slug = 'operating-system-in-1000-lines-rs'
+tags = ['prog']
+title = '「Writing an OS in 1000 Lines」をRISC-V 64bit向けにRustで書いた'
++++
 
 [seiya nutaさん](https://seiya.me/) という方が書かれた、 [Writing an OS in 1000 Lines](https://operating-system-in-1000-lines.vercel.app) という教材があります。
 

@@ -1,10 +1,10 @@
----
-title: "キャラクターメーカー"
-slug: character-maker
-date: 2022-01-20T11:44:41+09:00
-tags: [ "book" ]
-draft: false
----
++++
+date = '2022-01-20T11:44:41+09:00'
+draft = false
+slug = 'character-maker'
+tags = ['book']
+title = 'キャラクターメーカー'
++++
 
 *この文章は、『キャラクターメーカー 6つの理論とワークショップで学ぶ「つくり方」』の読書メモです。*
 *メモなのでかなり雑に書いています。*

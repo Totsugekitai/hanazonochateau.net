@@ -1,10 +1,10 @@
----
-title: "2022年振り返り"
-slug: look-back-2022
-date: 2022-12-03T16:53:08+09:00
-tags: [ "misc" ]
-draft: false
----
++++
+date = '2022-12-03T16:53:08+09:00'
+draft = false
+slug = 'look-back-2022'
+tags = ['misc']
+title = '2022年振り返り'
++++
 
 これは [WORDIAN Advent Calendar 2022](https://adventar.org/calendars/8236) の3日目の記事です。
 

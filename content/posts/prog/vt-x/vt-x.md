@@ -1,10 +1,10 @@
----
-title: "Intel CPUの仮想化機構についてメモ"
-slug: vt-x
-date: 2022-05-08T16:43:39+09:00
-tags: [ "prog" ]
-draft: true
----
++++
+date = '2022-05-08T16:43:39+09:00'
+draft = true
+slug = 'vt-x'
+tags = ['prog']
+title = 'Intel CPUの仮想化機構についてメモ'
++++
 
 最近 [自作VMM](https://github.com/Totsugekitai/tvisor) を始めました。
 その過程でIntel CPUの仮想化機構について調べたので、整理も兼ねてメモを残しておきます。

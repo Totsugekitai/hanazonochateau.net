@@ -1,10 +1,10 @@
----
-title: "575のページを詠み人と日付が表示されるようにした"
-slug: blame-575-build-system
-date: 2023-07-06T21:35:04+09:00
-tags: [ "prog" ]
-draft: false
----
++++
+date = '2023-07-06T21:35:04+09:00'
+draft = false
+slug = 'blame-575-build-system'
+tags = ['prog']
+title = '575のページを詠み人と日付が表示されるようにした'
++++
 
 ## やった
 

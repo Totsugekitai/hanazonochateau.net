@@ -1,10 +1,10 @@
----
-title: "白い薔薇の淵まで"
-slug: shiroi-bara-no-fuchi-made
-date: 2022-01-20T14:03:26+09:00
-tags: [ "book" ]
-draft: false
----
++++
+date = '2022-01-20T14:03:26+09:00'
+draft = false
+slug = 'shiroi-bara-no-fuchi-made'
+tags = ['book']
+title = '白い薔薇の淵まで'
++++
 
 自分は燃え上がる恋愛というものをしたことがなく、というかそもそも恋愛をしたことがない。
 『白い薔薇の淵まで』はまさに身を焦がす恋愛の話だが、本屋で見かけたときは恋愛の話なんて刺さらないだろうと見逃した。
