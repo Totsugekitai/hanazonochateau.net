@@ -1,0 +1,20 @@
+{{ $module_name := "header" }}
+
+<div id="{{ $module_name }}"></div>
+
+{{ $js_path := print $module_name ".js" }}
+{{ $options := dict "targetPath" $js_path "minify" true "defines" (dict "process.env.NODE_ENV" "\"development\"") }}
+{{ $ts_path := print "ts/" $module_name ".tsx" }}
+{{ $js := resources.Get $ts_path | js.Build $options }}
+<script type="text/javascript" src="{{ $js.Permalink }}" defer></script>
+
+{{ $css_path := print "css/" $module_name ".css" }}
+{{- with resources.Get $css_path }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}

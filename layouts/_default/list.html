@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ if eq .Title "posts" }}
+    <div class="post-ul">
+      {{ range .Pages }}
+      <div class="post-li">
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ .Summary }}...
+      </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{- with resources.Get "css/list.css" }}
+    {{- if eq hugo.Environment "development" }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{ end }}

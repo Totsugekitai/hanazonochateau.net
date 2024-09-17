@@ -1,0 +1,13 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-comment {
+  font-style: italic;
+}
+
+.comment-author {
+  font-style: italic;
+  text-align: end;
+}

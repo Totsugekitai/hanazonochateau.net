@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ $top_comments := findRE "<p>.*</p>" .Content }}
+{{ range $top_comments }}
+<p>{{ plainify . }}</p>
+{{ end }}
+
+{{ $data_sorted := sort .Site.Data ".date" "desc" }}
+
+<ul>
+  {{ range $data_sorted }}
+  <li class="li-575">
+    <div class="first-line-575">
+      <p class="content-575">{{ .content }}</p>
+      <div class="committer-575">by {{ .yomibito }}</div>
+      <div class="date-575">{{ time.Format "2006-01-02" .date }}</div>
+    </div>
+    <div class="second-line-575">
+      {{ .commit_text_body }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+
+{{- with resources.Get "css/575.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{ end }}
