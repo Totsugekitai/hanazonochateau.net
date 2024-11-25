@@ -1,15 +1,15 @@
-  {{ range (where .Site.Pages.ByTitle "Section" "comments") }}
-      {{ range .Pages }}
-        <div class="comment-container">
-            <h2 class="comment-date">{{ .Date }}</h2>
-            <div class="comment-comment">{{ .Page.Params.comment }}</div>
-            <div class="comment-author">{{ .Page.Params.author }} さんより</div>
-            <br>
-            <div class="comment-reply">{{ .Page.Params.reply }}</div>
-            <br>
-        </div>
-      {{ end }}
+{{ range (where .Site.Pages.ByTitle "Section" "comments") }}
+  {{ if ne .File.BaseFileName "_index" }}
+    <div class="comment-container">
+      <h2 class="comment-date">{{ .Date }}</h2>
+      <div class="comment-comment">{{ .Page.Params.comment }}</div>
+      <div class="comment-author">{{ .Page.Params.author }} さんより</div>
+      <br>
+      <div class="comment-reply">{{ .Page.Params.reply }}</div>
+      <br>
+    </div>
   {{ end }}
+{{ end }}
 
 {{ $css_path := print "css/comments.css" }}
   {{- with resources.Get $css_path }}
