@@ -1,0 +1,7 @@
+div.tags {
+  display: flex;
+  justify-content: flex-start;
+  ul {
+    list-style: none;
+  }
+}

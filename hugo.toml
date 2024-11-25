@@ -1,19 +1,24 @@
 baseURL = "https://hanazonochateau.net/"
 languageCode = "ja-jp"
 title = "花園シャトー107号室"
-theme = "etch"
+# theme = "hanazono"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 publishDir = "public"
 canonifyurls = true
 enableRobotsTXT = true
+hasCJKLanguage = true
+summaryLength = 80
 
 [markup]
 defaultMarkdownHandler = "goldmark"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
-copyright = "Copyright © 2022 Totsugekitai"
+author = "Totsugekitai"
 dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
@@ -69,7 +74,7 @@ url = "/index.xml"
 weight = 30
 
 [permalinks]
-posts = "/posts/:year/:month/:day/:slug"
+posts = "/posts/:slug"
 575 = "/575"
 about = "/about"
 gallery = "/gallery"

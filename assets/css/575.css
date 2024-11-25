@@ -1,0 +1,47 @@
+.li-575 {
+  list-style: none;
+}
+
+.first-line-575 {
+  display: flex;
+  align-items: end;
+  font-style: italic;
+  padding: 5px 0;
+}
+
+.content-575 {
+  padding: 0 5px;
+}
+
+.committer-575 {
+  padding: 0 5px;
+  font-size: smaller;
+}
+
+.date-575 {
+  padding: 0 5px;
+  font-size: smaller;
+}
+
+.second-line-575 {
+  text-align: end;
+  font-size: small;
+}
+
+@media screen and (width < 600px) {
+  .content-575 {
+    padding: 0 2px;
+    font-size: smaller;
+  }
+  .committer-575 {
+    padding: 0 2px;
+    font-size: xx-small;
+  }
+  .date-575 {
+    padding: 0 2px;
+    font-size: xx-small;
+  }
+  .second-line-575 {
+    font-size: x-small;
+  }
+}
