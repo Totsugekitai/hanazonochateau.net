@@ -28,7 +28,8 @@ const Clock = (): React.ReactNode => {
   );
 };
 
-const domNode = document.querySelector('#clock')!;
-const root = createRoot(domNode);
-
-root.render(<Clock />);
+const domNode = document.getElementById('clock');
+if (domNode !== null) {
+  const root = createRoot(domNode);
+  root.render(<Clock />);
+}

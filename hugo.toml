@@ -60,10 +60,10 @@ url = "/gallery"
 weight = 23
 
 [[menu.main]]
-identifier = "comments"
-name = "comments"
-title = "comments"
-url = "/comments"
+identifier = "comment"
+name = "comment"
+title = "comment"
+url = "/comment"
 weight = 25
 
 [[menu.main]]
@@ -78,4 +78,4 @@ posts = "/posts/:slug"
 575 = "/575"
 about = "/about"
 gallery = "/gallery"
-comments = "/comments"
+comment = "/comment"

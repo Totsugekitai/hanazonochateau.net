@@ -11,7 +11,7 @@ const navElements: NavElement[] = [
   { key: 1, value: 'about' },
   { key: 2, value: '575' },
   { key: 3, value: 'gallery' },
-  { key: 4, value: 'comments' },
+  { key: 4, value: 'comment' },
   { key: 5, value: 'rss' },
 ];
 const ariaControl: string = 'nav-control';
@@ -88,7 +88,8 @@ const Header: React.FC = (): React.ReactNode => {
   );
 };
 
-const domNode = document.getElementById('header')!;
-const root = createRoot(domNode);
-
-root.render(<Header />);
+const domNode = document.getElementById('header');
+if (domNode !== null) {
+  const root = createRoot(domNode);
+  root.render(<Header />);
+}

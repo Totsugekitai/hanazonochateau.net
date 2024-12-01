@@ -1,12 +1,14 @@
-{{- with resources.Get "js/main.js" }}
-  {{- if eq hugo.Environment "development" }}
-    {{- with . | js.Build }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{- end }}
-  {{- else }}
-    {{- $opts := dict "minify" true }}
-    {{- with . | js.Build $opts | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{- range resources.Match "ts/**.tsx" -}}
+  {{- with resources.Get . -}}
+  {{- $opts := dict "minify" true "defines" (dict "process.env.NODE_ENV" "\"development\"") -}}
+  {{- if eq hugo.Environment "development" -}}
+      {{- with . | js.Build -}}
+        <script type="text/javascript" src="{{ .RelPermalink }}" defer></script>
+      {{- end -}}
+    {{- else -}}
+      {{- with . | js.Build $opts | fingerprint -}}
+        <script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

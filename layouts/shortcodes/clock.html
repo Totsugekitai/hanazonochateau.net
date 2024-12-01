@@ -1,7 +1,1 @@
-{{ $module_name := "clock" }}
-<div id="{{ $module_name }}"></div>
-{{ $f := print $module_name ".js" }}
-{{ $options := dict "targetPath" $f "minify" true "defines" (dict "process.env.NODE_ENV" "\"development\"") }}
-{{ $ts := print "ts/" $module_name ".tsx" }}
-{{ $js := resources.Get $ts | js.Build $options }}
-<script type="text/javascript" src="{{ $js.Permalink }}" defer></script>
+<div id="clock"></div>

@@ -1,0 +1,26 @@
+{{- define "main" -}}
+  <h1>{{ .Title }}</h1>
+  {{- .Content -}}
+  <br>
+  {{- if eq .Title "comment" -}}
+    <div>
+      {{- range .Pages -}}
+        <div class="comment-container">
+          <h2 class="comment-date">{{ .Date | time.Format "2006-01-02 15:04:05 MST" }}</h2>
+          <div class="comment-comment">{{ .Content | plainify }}</div>
+          <div class="comment-author">
+            {{- if .Params.author -}}
+              {{ .Params.author }}　
+            {{- else -}}
+              (匿名)　
+            {{- end -}}
+            さんより
+          </div>
+          <br>
+          <div class="comment-reply">{{ .Params.reply | plainify }}</div>
+          <br>
+        </div>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
