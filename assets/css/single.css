@@ -5,3 +5,9 @@ div.tags {
     list-style: none;
   }
 }
+
+main {
+  h3 {
+    margin: 0.8rem 0;
+  }
+}
