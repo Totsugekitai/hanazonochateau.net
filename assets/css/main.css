@@ -54,6 +54,17 @@ figure {
   box-shadow: #aaa 0 0 3px;
 }
 
+p {
+  text-indent: 1rem;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (width < 600px) {
   html {
     font-size: 14px;
