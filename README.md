@@ -5,6 +5,19 @@
 - domain: cloudflare
 - comment form: google forms
 
+## 事前準備
+
+```
+sudo apt install hugo
+npm install
+```
+
+## ローカルで確認
+
+```
+hugo server
+```
+
 ## 575を追加したい人向け情報
 
 ### 575の記載(required)
@@ -43,7 +56,7 @@ add 575
 内部的には `git blame` してauthor情報やら日時やらを取ってきて、ビルド時に埋め込んでいます。
 詳細は `gen_575_data.sh` を見よ。
 
-## ビルド
+### 手元でビルド
 
 ```sh
 $ ./gen_575_data.sh
