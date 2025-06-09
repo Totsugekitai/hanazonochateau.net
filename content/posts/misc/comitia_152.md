@@ -3,7 +3,7 @@ title = "コミティア152で文庫の同人誌を出した"
 slug = "comitia_152"
 date = 2025-06-08T21:27:23+09:00
 tags = [ "misc" ]
-draft = true
+draft = false
 +++
 
 6月1日、日曜日。
