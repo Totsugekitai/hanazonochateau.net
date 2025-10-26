@@ -10,4 +10,14 @@ main {
   h3 {
     margin: 0.8rem 0;
   }
+  pre {
+    background-color: #ddd;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px;
+    code {
+      margin-left: 1em;
+      font-family: monospace;
+    }
+  }
 }
