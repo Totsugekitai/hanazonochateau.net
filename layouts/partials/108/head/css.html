@@ -1,4 +1,4 @@
-{{- with (resources.Match "css/*.css" | resources.Concat "main.css") }}
+{{- with (resources.Match "css/108/*.css" | resources.Concat "108/main.css") }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css">
   {{- else }}

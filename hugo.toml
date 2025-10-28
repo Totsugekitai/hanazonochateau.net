@@ -17,6 +17,11 @@ defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
 unsafe = true
 
+[module]
+[[module.mounts]]
+source = "s3"
+target = "static/data"
+
 [params]
 author = "Totsugekitai"
 highlight = true
