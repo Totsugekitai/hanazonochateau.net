@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
+
+{{ end }}
+
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "108/head.html" . }}
+</head>
+<body>
+  <div class="body-container">
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>

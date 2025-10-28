@@ -1,0 +1,23 @@
+name = "hanazonochateau-worker"
+pages_build_output_dir = "./public"
+compatibility_date = "2025-11-20"
+
+[env.production]
+r2_buckets =[ 
+    { binding = "DATA", bucket_name = "hanazonochateau" }
+]
+
+[env.production.vars]
+HUGO_VERSION = "0.123.7"
+NODE_VERSION = "22.11.0"
+
+[env.preview]
+r2_buckets =[ 
+    { binding = "DATA", bucket_name = "hanazonochateau" }
+]
+
+[env.preview.vars]
+HUGO_BASEURL = "/"
+HUGO_VERSION = "0.123.7"
+NODE_VERSION = "22.11.0"
+

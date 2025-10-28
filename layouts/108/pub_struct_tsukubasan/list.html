@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ if eq .Title "posts" }}
+    <div class="post-ul">
+      {{ range .Pages }}
+      <div class="post-li">
+        <div class="post-li-href">
+          <a href="{{ .RelPermalink }}">
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := .Date.Format "2006年01月02日" }}
+            <h2>{{ .LinkTitle }}</h2>
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </a>
+        </div>
+        {{ .Summary }}...
+      </div>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
+
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "108/pub_struct_tsukubasan/head.html" . }}
+</head>
+<body>
+  <div class="body-container">
+    {{ partial "108/pub_struct_tsukubasan/header.html" . }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "108/pub_struct_tsukubasan/footer.html" . }}
+  </div>
+</body>
+</html>

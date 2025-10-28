@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100svh;
+  width: stretch;
+}
+
+body {
+  color: #eee;
+  background-color: #555;
+  font-family: sans-serif;
+  line-height: 1.5;
+  min-height: 100%;
+  max-width: 100%;
+  padding: 0rem 2rem;
+
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+a {
+  color: inherit;
+}
