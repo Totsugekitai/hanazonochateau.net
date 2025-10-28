@@ -19,7 +19,6 @@ unsafe = true
 
 [params]
 author = "Totsugekitai"
-dark = "on"
 highlight = true
 commentForm = "https://forms.gle/Cc3R3fFMCQ9m6Rsr9"
 description = "毎日眠いです。"
