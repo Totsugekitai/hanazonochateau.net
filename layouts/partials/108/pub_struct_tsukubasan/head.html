@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="音楽サークル「筑波山構造体」のページです。">
+<title>{{ printf "%s | 筑波山構造体" .Title }}</title>
+{{ partialCached "108/pub_struct_tsukubasan/head/css.html" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ if strings.HasPrefix .RelPermalink "/108/pub_struct_tsukubasan/" }}
+  <link rel="icon" href="data:,">
+{{ else }}
+  <link rel="icon" href="/favicon.ico">
+{{ end }}
