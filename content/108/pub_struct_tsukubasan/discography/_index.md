@@ -3,7 +3,7 @@ title = 'about'
 layout = 'pub_struct_tsukubasan/discography'
 +++
 
-## 1st EP "unsafe safe blocks"
+## 1st EP "Unsafe safe blocks"
 
 2025/10/26 release.
 
