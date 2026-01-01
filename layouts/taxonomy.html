@@ -4,7 +4,7 @@
     {{ range .Pages }}
     <div class="post-li">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}...
+      {{ .Summary | plainify | truncate 100 }}
     </div>
     {{ end }}
   </div>

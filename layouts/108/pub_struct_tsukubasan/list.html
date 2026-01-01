@@ -13,7 +13,7 @@
             <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
           </a>
         </div>
-        {{ .Summary }}...
+        {{ .Summary | plainify | truncate 100 }}
       </div>
       {{ end }}
     </div>

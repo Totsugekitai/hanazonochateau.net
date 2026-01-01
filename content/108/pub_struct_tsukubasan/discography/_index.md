@@ -1,6 +1,7 @@
 +++
 title = 'about'
-layout = 'pub_struct_tsukubasan/discography'
+type = '108/pub_struct_tsukubasan'
+layout = 'discography'
 +++
 
 ## 1st EP "Unsafe safe blocks"

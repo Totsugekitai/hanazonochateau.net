@@ -1,8 +1,8 @@
 {{ define "main" }}
-<p>{{ .Content }}</p>
-<h3>最近の投稿</h3>
-<br>
-<div class="post-ul">
+  {{ .Content }}
+  <h3>最近の投稿</h3>
+  <br>
+  <div class="post-ul">
   {{ range where .Pages "LinkTitle" "==" "posts" }}
     {{ range first 3 ( .Pages.ByDate.Reverse ) }}
       <div class="post-li">
@@ -14,12 +14,12 @@
             <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
           </a>
         </div>
-        {{ .Summary }}...
+        {{ .Summary | plainify | truncate 100 }}
       </div>
     {{ end }}
   {{ end }}
-</div>
-<a href="posts">過去の投稿はこちら</a>
+  </div>
+  <a href="posts">過去の投稿はこちら</a>
 {{ end }}
 
 <!DOCTYPE html>
