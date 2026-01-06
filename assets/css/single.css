@@ -3,6 +3,7 @@ div.tags {
   justify-content: flex-start;
   ul {
     list-style: none;
+    padding: 0 0.3rem;
   }
 }
 
@@ -15,9 +16,17 @@ main {
     border-radius: 3px;
     margin: 10px;
     padding: 5px;
-    code {
-      margin-left: 1em;
-      font-family: monospace;
-    }
+  }
+  code {
+    background-color: #ddd;
+    text-indent: 0;
+    padding: 3px;
+    font-family: monospace;
+  }
+  ul {
+    padding: 0.5rem 2rem;
+  }
+  table {
+    padding: 5px;
   }
 }
