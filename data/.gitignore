@@ -1,2 +1,5 @@
 *
 !.gitignore
+!108/
+!108/pub_struct_tsukubasan/
+!108/pub_struct_tsukubasan/opl3_voices.toml

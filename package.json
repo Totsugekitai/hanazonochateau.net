@@ -5,24 +5,27 @@
   "scripts": {
     "prettier": "prettier --write ."
   },
+  "engines": {
+    "node": "24"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@types/react": "^19.2.7",
+    "@eslint/js": "^9.39.4",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.51.0",
-    "@typescript-eslint/parser": "^8.51.0",
-    "esbuild": "^0.27.2",
-    "eslint": "^9.39.2",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "esbuild": "^0.27.3",
+    "eslint": "^9.39.4",
     "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.5.0",
-    "prettier": "3.7.4",
+    "globals": "^17.4.0",
+    "prettier": "3.8.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.51.0"
+    "typescript-eslint": "^8.56.1"
   },
   "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }

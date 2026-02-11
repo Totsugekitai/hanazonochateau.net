@@ -1,0 +1,129 @@
+[[voices]]
+title = "チェンバロ"
+category = "piano etc."
+param = """
+@20 0 1
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- チェンバロ
+ 15 10 00 01 02 19   0   0 05  6  0   0
+ 14 00 04 04 00 00   0   0 01  6  0   0
+; slot1 の ML=3,7 などでもよい
+"""
+comment = "WSを両方6にするのは結構色んな音が出るので研究する価値があるかもしれない。\nサンプル音声は BWV 1087 の 6 です。"
+audio = "VOICE1/CHENBARO.MP3"
+
+[[voices]]
+title = "やや落ち着いたホルン"
+category = "brass"
+param = """
+@10 0 5
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- ホルン(1ch)
+ 12 05 00 06 01 24   0   0 00  0  0   0
+ 06 04 00 07 01 00   0   0 01  0  0   0
+"""
+comment = ""
+audio = "VOICE1/HORN.MP3"
+
+[[voices]]
+title = "オルゴール風(鉄琴かも)"
+category = "bell"
+param = """
+@01 0 2
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- 鉄琴かオルゴール風
+ 15 10 02 04 06 30   0   0 06  5  0   0
+ 15 04 07 01 10 00   0   0 02  0  0   0
+; op1のTLを変えると音の曇り度が変わる
+"""
+comment = ""
+audio = "VOICE1/ORUGOFU.MP3"
+
+[[voices]]
+title = "バスドラム0"
+category = "drum"
+param = """
+@120 0 4
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- バスドラム0
+ 15 10 03 09 10 10   0   0 00  4  0   0
+ 15 05 10 06 03 00   0   0 01  0  0   0
+; o3 e- あたりで、下り音程LFOをかけて使う
+"""
+comment = ""
+audio = "VOICE1/BD0.MP3"
+
+[[voices]]
+title = "チャイム"
+category = "bell"
+param = """
+@20 0 5
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- チャイム(学校のやつ風)
+ 15 09 00 01 03 01   0   0 03  7  0   0
+ 15 00 04 04 00 00   0   0 01  0  0   0
+ """
+comment = ""
+audio = "VOICE1/CHAIMU.MP3"
+
+[[voices]]
+title = "チューバ"
+category = "brass"
+param = """
+@20 0 5
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- tuba
+ 06 06 00 02 03 13   1   0 00  1  0   0
+ 10 08 00 05 01 00   0   0 01  0  0   0
+; お好みで FB=4, slot1 TL=09 とかでもよい
+"""
+comment = ""
+audio = "VOICE1/TUBA_1.MP3"
+
+[[voices]]
+title = "ハーモニクス気味エレキギター？"
+category = "guitar"
+param = """
+@20 0 5
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- guitar_a
+ 15 08 01 04 04 08   0   0 02  5  0   0
+ 14 07 00 05 02 00   0   0 02  0  0   0
+@21 0 4
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- guitar_b
+ 15 08 01 04 02 03   0   0 01  6  0   0
+ 14 05 00 05 02 00   0   0 03  2  0   0
+; b 側の FB, slot1 の TL, ML あたりで結構雰囲気変わる
+"""
+comment = ""
+audio = "VOICE1/GUITAR.MP3"
+
+[[voices]]
+title = "怪しいベース"
+category = "bass"
+param = """
+@000 0 4
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- 怪しい
+ 09 05 03 15 05 10   0   0 00  0  0   0
+ 15 04 02 11 02 00   0   0 00  0  0   0
+"""
+comment = "怪しい感じ"
+audio = "VOICE1/AYABASS.MP3"
+
+[[voices]]
+title = "王道ベース(指)"
+category = "bass"
+param = """
+@001 0 1
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB -- 王道ベース(指)
+ 11 04 00 10 15 14   0   0 01  0  0   0
+ 15 04 00 10 15 00   0   0 01  0  0   0
+"""
+comment = "スラップは難しくていったん断念"
+audio = "VOICE1/FNGRBASS.MP3"
+
+[[voices]]
+title = "グロッケン"
+category = "xylophone/metallophone"
+param = """
+@20 0 3
+;AR DR SR RR SL TL KSL KSR ML WS AM VIB --- 僅かにオルゴール気味のグロッケン
+ 15 04 01 02 02 33   0   0 15  5  0   0
+ 14 07 03 04 04 00   0   0 02  0  0   0
+; slot1 は WS=0,1 などでもよい
+"""
+comment = ""
+audio = "VOICE1/GUROKKEN.MP3"
