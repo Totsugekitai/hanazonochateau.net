@@ -121,12 +121,7 @@ footer {
     margin: 1.5rem 0;
     padding: 0rem 1rem;
     border-left: #888 solid 5px;
-    container-type: inline-size;
-    audio {
-      width: 100%;
-    }
     pre {
-      font-size: 3cqw;
       padding: 5px;
       background-color: #eee;
     }
@@ -180,6 +175,18 @@ img {
   footer {
     width: 95%;
     max-width: 95%;
+  }
+
+  .voice-ul {
+    .voice-li {
+      container-type: inline-size;
+      audio {
+        width: 100%;
+      }
+      pre {
+        font-size: 3cqw;
+      }
+    }
   }
 
   h1 {
