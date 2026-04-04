@@ -116,6 +116,18 @@ footer {
   }
 }
 
+.voice-ul {
+  .voice-li {
+    margin: 1.5rem 0;
+    padding: 0rem 1rem;
+    border-left: #888 solid 5px;
+    pre {
+      padding: 5px;
+      background-color: #eee;
+    }
+  }
+}
+
 h1 {
   font-size: x-large;
 }
@@ -163,6 +175,18 @@ img {
   footer {
     width: 95%;
     max-width: 95%;
+  }
+
+  .voice-ul {
+    .voice-li {
+      container-type: inline-size;
+      audio {
+        width: 100%;
+      }
+      pre {
+        font-size: min(13px,3cqw);
+      }
+    }
   }
 
   h1 {

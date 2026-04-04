@@ -12,6 +12,7 @@ layout = 'pst'
 
 - [Discography](discography)
 - [Posts](posts)
+- [OPL3 voice library](opl3_voices)
 
 <br>
 <hr>

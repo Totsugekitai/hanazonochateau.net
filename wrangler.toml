@@ -10,6 +10,7 @@ r2_buckets =[
 [env.production.vars]
 HUGO_VERSION = "0.154"
 NODE_VERSION = "24"
+SKIP_DEPENDENCY_INSTALL = "true"
 
 [env.preview]
 r2_buckets =[ 
@@ -20,4 +21,4 @@ r2_buckets =[
 HUGO_BASEURL = "/"
 HUGO_VERSION = "0.154"
 NODE_VERSION = "24"
-
+SKIP_DEPENDENCY_INSTALL = "true"

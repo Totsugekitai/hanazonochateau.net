@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <br>
+  {{ $voices := index .Site.Data "108" "pub_struct_tsukubasan" "opl3_voices" }}
+  {{ $voices = $voices.voices }}
+  
+  {{ $scratch := newScratch }}
+
+  {{ range $voices }}
+    {{ $cat := .category | default "uncategorized" }}
+    {{ $scratch.Add $cat (slice .) }}
+  {{ end }}
+
+  {{ range $cat, $items := $scratch.Values }}
+    <h2>{{ $cat }}</h2>
+    <div class="voice-ul">
+      {{ range $items }}
+        <div class="voice-li">
+          <p>タイトル: {{ .title }}</p>
+          <audio controls src="/data/108/pub_struct_tsukubasan/voices/{{ .audio }}"></audio>
+          <pre>{{ .param }}</pre>
+          <div>
+            <p>コメント:</p>
+            <p>{{ .comment }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+{{ end }}
+
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "108/pub_struct_tsukubasan/head.html" . }}
+</head>
+<body>
+  <div class="body-container">
+    {{ partial "108/pub_struct_tsukubasan/header.html" . }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "108/pub_struct_tsukubasan/footer.html" . }}
+  </div>
+</body>
+</html>
